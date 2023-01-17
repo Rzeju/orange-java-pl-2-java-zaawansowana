@@ -1,4 +1,4 @@
-package pl.sda.oop;
+package pl.sda.oop.abstract_classes;
 
 public abstract class Car {
 
