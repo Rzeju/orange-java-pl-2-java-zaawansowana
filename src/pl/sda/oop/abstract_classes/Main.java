@@ -11,5 +11,11 @@ public class Main {
         System.out.println(honda_1.getModel());
 
         honda_1.someMethodToOverride();
+
+        //Przykłąd polimorfizmu
+        Car myCar = new Honda("324554436", "PKPKPK");
+        myCar.runEngine();
+
+
     }
 }
