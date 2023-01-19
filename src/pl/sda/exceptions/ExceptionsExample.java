@@ -1,7 +1,6 @@
 package pl.sda.exceptions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ExceptionsExample {
@@ -16,6 +15,8 @@ public class ExceptionsExample {
         } catch (IndexOutOfBoundsException exception) {
             System.out.println("Blok catch");
             System.out.println(exception.getMessage());
+        } finally {
+            System.out.println("Ten blok wykona się zawsze! Niezależnie od tego czy wyjątek zostanie rzucony");
         }
 
         myList.get(3);
