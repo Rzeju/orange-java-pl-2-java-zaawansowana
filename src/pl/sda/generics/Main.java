@@ -14,5 +14,10 @@ public class Main {
         Coffee blackCoffee = new Coffee();
         Cup<Coffee> coffeeCup = new Cup<>(blackCoffee);
         coffeeCup.drink();
+
+        Tea blackTea = new Tea();
+        Cup<Tea> newCup = coffeeCup.fullFillCup(blackTea);
+
+
     }
 }

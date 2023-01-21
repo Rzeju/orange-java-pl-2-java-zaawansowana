@@ -1,6 +1,6 @@
 package pl.sda.generics.liquids;
 
-public class Coffee {
+public class Coffee extends Liquid {
 
     @Override
     public String toString() {

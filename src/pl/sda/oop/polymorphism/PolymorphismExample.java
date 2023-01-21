@@ -3,7 +3,6 @@ package pl.sda.oop.polymorphism;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner;
 
 public class PolymorphismExample {
 
