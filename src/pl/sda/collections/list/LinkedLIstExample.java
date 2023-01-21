@@ -1,5 +1,7 @@
 package pl.sda.collections.list;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,6 +24,19 @@ public class LinkedLIstExample {
         System.out.println(" ");
 
         System.out.println((myLinkedList.get(3)));
+
+        List<String> myArrayList = new ArrayList<>();
+        for (String s : myLinkedList) {
+            myArrayList.add(s);
+        }
+        myArrayList.clear();
+
+        myArrayList.addAll(myLinkedList);
+        myArrayList.clear();
+
+        String[] myArray = {"3212312", "432asfasfsafa", "dsfsdfgds", "kahaskjdhas"};
+
+        myArrayList.addAll(Arrays.asList(myArray));
 
     }
 }
