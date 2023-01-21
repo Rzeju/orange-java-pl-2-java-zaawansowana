@@ -38,5 +38,12 @@ public class LinkedLIstExample {
 
         myArrayList.addAll(Arrays.asList(myArray));
 
+
+        System.out.println("Wynik toArray()");
+        String[] toArray = myLinkedList.toArray(new String[0]);
+        for (String s : toArray) {
+            System.out.print(s + " ,");
+        }
+
     }
 }
