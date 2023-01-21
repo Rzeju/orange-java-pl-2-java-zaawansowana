@@ -13,8 +13,8 @@ public class InOutExample {
         FileOutputStream out;
 
         try {
-            in = new FileInputStream("D:\\Dev\\SDA\\orange-java-pl-2-java-zaawansowana\\src\\pl\\sda\\resources\\user.txt");
-            out = new FileOutputStream("D:\\Dev\\SDA\\orange-java-pl-2-java-zaawansowana\\src\\pl\\sda\\resources\\user_output.txt");
+            in = new FileInputStream("src/pl/sda/resources/user.txt");
+            out = new FileOutputStream("src/pl/sda/resources/user_output.txt");
 
             int c;
             while ((c = in.read()) != -1) {
@@ -25,10 +25,5 @@ public class InOutExample {
         } catch (IOException e) {
             System.out.println("Problem z dostępem do pliku: " + e.getMessage());
         }
-
-
-
-
-
     }
 }
