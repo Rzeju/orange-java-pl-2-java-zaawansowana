@@ -25,5 +25,7 @@ public class InOutExample {
         } catch (IOException e) {
             System.out.println("Problem z dostępem do pliku: " + e.getMessage());
         }
+
+
     }
 }
