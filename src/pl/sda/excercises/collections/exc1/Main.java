@@ -1,6 +1,7 @@
 package pl.sda.excercises.collections.exc1;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -25,8 +26,8 @@ public class Main {
         System.out.println(myList);
 
         //Inny sposób rozwiązania
-        List<MyObject> myObjectList = new ArrayList<>(List.of(myObjects));
-        List<MyObject> myObjectSubList = myObjectList.subList(1, 9);
+        List<MyObject> myObjectList = new LinkedList<>(List.of(myObjects));
+        List<MyObject> myObjectSubList = new ArrayList<>(myObjectList.subList(1, 9));
         myObjectList.removeAll(myObjectSubList);
         System.out.println(myObjectList);
 
