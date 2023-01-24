@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class SerializableExample {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         //obiekty typu Book
         Book book_1 = new Book(1L, "BOOK", "Author");
@@ -23,5 +23,20 @@ public class SerializableExample {
         objectOutputStream.writeObject(book_2);
 
         objectOutputStream.flush();
+        objectOutputStream.close();
+
+        FileInputStream fileInputStream = new FileInputStream(file);
+        BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
+        ObjectInputStream objectInputStream = new ObjectInputStream(bufferedInputStream);
+
+        Object object_1 = objectInputStream.readObject();
+        Object object_2 = objectInputStream.readObject();
+
+        System.out.println(object_1);
+        System.out.println( ((Book) object_2).toString() );
+
+        Book loadedBook = (Book) object_2;
+        System.out.println(loadedBook.getAuthor());
+
     }
 }
