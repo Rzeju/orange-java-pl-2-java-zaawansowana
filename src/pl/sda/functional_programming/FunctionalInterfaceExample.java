@@ -19,9 +19,13 @@ public class FunctionalInterfaceExample {
         runnable.run();
         runnableLambda.run();
 
-        Predicate<String> myPredicate = (s) -> s.equals("Test");
-        boolean result = myPredicate.test("Hej");
-        System.out.println(result);
+        Predicate<String> myPredicate_1 = (s) -> s.equals("Test");
+        boolean result_1 = myPredicate_1.test("Hej");
+        System.out.println(result_1);
+
+        Predicate<String> myPredicate_2 = myPredicate_1.or((s) -> s.equals("Hej"));
+        boolean result_2 = myPredicate_2.test("Hej");
+        System.out.println(result_2);
 
         Consumer<String> consumer = (s) -> System.out.println(s);
         consumer.accept("CZESC");
