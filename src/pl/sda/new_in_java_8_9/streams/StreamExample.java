@@ -14,7 +14,16 @@ public class StreamExample {
                 .collect(Collectors.toList());
 
         sortedNumbers.forEach(s -> System.out.print(s + ", "));
+
+        System.out.println(" ");
         sortedNumbers.forEach(System.out::println);
+
+        Double average = myNumbers.stream()
+                .mapToDouble(Integer::doubleValue)
+                .average()
+                .orElse(0.0);
+
+        System.out.println("Średnia = " + average);
 
     }
 }
