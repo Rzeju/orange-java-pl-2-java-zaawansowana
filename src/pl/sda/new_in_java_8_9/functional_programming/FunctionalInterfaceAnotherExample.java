@@ -1,4 +1,4 @@
-package pl.sda.functional_programming;
+package pl.sda.new_in_java_8_9.functional_programming;
 
 import java.util.Random;
 import java.util.function.Function;

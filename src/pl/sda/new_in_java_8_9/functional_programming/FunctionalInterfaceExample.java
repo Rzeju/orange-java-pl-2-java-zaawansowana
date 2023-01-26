@@ -1,4 +1,4 @@
-package pl.sda.functional_programming;
+package pl.sda.new_in_java_8_9.functional_programming;
 
 import java.util.function.Consumer;
 import java.util.function.Predicate;
