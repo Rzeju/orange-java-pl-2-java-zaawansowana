@@ -1,7 +1,5 @@
 package pl.sda.in_out.path;
 
-import jdk.dynalink.StandardOperation;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
