@@ -4,30 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Dinner dinner = new Dinner();
 
-        Runnable r1 = () -> {
-            dinner.waitForDinner();
-            dinner.prepareDinner();
-        };
-        Runnable r2 = () -> {
-            dinner.waitForDinner();
-            dinner.prepareDinner();
-        };
-        Runnable r3 = () -> {
-            dinner.waitForDinner();
-            dinner.prepareDinner();
-        };
-        Runnable r4 = () -> {
+        Runnable r = () -> {
             dinner.waitForDinner();
             dinner.prepareDinner();
         };
 
-        Thread thread1 = new Thread(r1);
-        Thread thread2 = new Thread(r2);
-        Thread thread3 = new Thread(r3);
-        Thread thread4 = new Thread(r4);
+        Thread thread1 = new Thread(r);
+        Thread thread2 = new Thread(r);
+        Thread thread3 = new Thread(r);
+        Thread thread4 = new Thread(r);
 
         thread1.start();
         thread2.start();
