@@ -18,4 +18,12 @@ public class DataBase {
     public static String getCounter(int x) {
         return "";
     }
+
+    public static void getCounter(Integer x) {
+
+    }
+
+    public static DataBase getCounter(Integer x, String s) {
+        return new DataBase();
+    }
 }

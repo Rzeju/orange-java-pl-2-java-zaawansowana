@@ -1,11 +1,12 @@
 package pl.sda.exceptions;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExceptionsExample {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         List<String> myList = new ArrayList<>();
         myList.add("Hello");
@@ -19,9 +20,11 @@ public class ExceptionsExample {
             System.out.println("Ten blok wykona się zawsze! Niezależnie od tego czy wyjątek zostanie rzucony");
         }
 
-        myList.get(3);
+        //myList.get(3);
 
 
         System.out.println("TO SIĘ NIE WYKONA");
+
+        int x = ExceptionTest.testException(new int[10], 15);
     }
 }
