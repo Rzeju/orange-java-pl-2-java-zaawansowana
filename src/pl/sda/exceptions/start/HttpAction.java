@@ -1,4 +1,4 @@
-package pl.sda.concurrency.start;
+package pl.sda.exceptions.start;
 
 public class HttpAction extends Thread {
 
