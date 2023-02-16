@@ -4,8 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //utworzenie obiektu Line
         Line line = new Line();
 
+        //utworzenie wątków wykonujących metodę getLine()
+        //klasa anonimowa Runnable posłuży do utworzenia wątku
         Runnable r1 = () -> {
             line.getLine(5, 1);
         };
@@ -26,6 +29,9 @@ public class Main {
         };
         Thread thread4 = new Thread(r4);
 
+        //uruchomienie wątków
+        //kolejność wjazdu pociągów na tor jest przypadkowa
+        //nie mamy kontroli nad kolejnością wykonania się wątków
         thread1.start();
         thread2.start();
         thread3.start();
